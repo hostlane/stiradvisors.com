@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Stir Advisors</title>
+  </head>
+
+  <body>
+    <div id="preloader">
+      <img src="/assets/img/logo.png" alt="Stir Advisors" />
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid inner-wrap">
+        <a class="navbar-brand"
+          ><img class="logo" src="/assets/img/logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="navButton"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" onclick="toTop()">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="hero">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <svg
+              viewBox="0 0 45 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="22.5"
+                cy="22.5"
+                r="21.5"
+                transform="matrix(-1 0 0 1 45 0)"
+                stroke="#222222"
+                stroke-width="2"
+              />
+              <path
+                d="M20 28L25 22.5L20 17"
+                stroke="#222222"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="carousel-item active">
+            <div class="left">
+              <p class="heading">
+                We excel at closing
+                <span class="blue-text">deals successfully</span>
+              </p>
+              <p class="description one">
+                At Stir Advisors, closing deals isn't merely a goal—it's our
+                unwavering commitment. Leveraging precision, expertise, and an
+                unyielding drive, we adeptly navigate the intricate realm of
+                negotiations and transactions.
+              </p>
+              <p class="description">
+                Our dedication ensures every deal culminates successfully,
+                delivering substantial value and fostering growth for our
+                clients.
+              </p>
+              <a href="#form"><button class="site-btn">Get in touch</button></a>
+            </div>
+            <div class="right">
+              <img src="/assets/img/hero-1.1.jpg" />
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="left">
+              <p class="heading">
+                We are <span class="blue-text">Founders for Founders</span>
+              </p>
+              <p class="description one">
+                We champion collaborative entrepreneurship, offering unwavering
+                support to fellow business visionaries. Our focus is on
+                empowering entrepreneurs through shared experiences and
+                collective growth.
+              </p>
+              <p class="description">
+                At the heart of our mission lies a dedication to fostering a
+                united community of entrepreneurs. We stand together to provide
+                support, knowledge, and resources, driving success through
+                mutual collaboration and empowerment.
+              </p>
+              <a href="#form"><button class="site-btn">Get in touch</button></a>
+            </div>
+            <div class="right">
+              <img src="/assets/img/hero-3.1.jpg" />
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="left">
+              <p class="heading">
+                We Make Startups <span class="blue-text">Investment Ready</span>
+              </p>
+              <p class="description one">
+                Empowering startups to be investment-ready is our forte. We
+                streamline strategies, refine approaches, and equip businesses
+                for investment success, ensuring their readiness for growth and
+                development.
+              </p>
+              <p class="description">
+                At the core of our expertise lies the art of making startups
+                investment-ready. Through meticulous guidance and strategic
+                refinement, we prepare businesses for the funding landscape,
+                enabling their potential to flourish in the competitive market.
+              </p>
+              <a href="#form"><button class="site-btn">Get in touch</button></a>
+            </div>
+            <div class="right">
+              <img src="/assets/img/hero-4.1.jpg" />
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="left">
+              <p class="heading">
+                Our Advisory, that <span class="blue-text">Yield Results</span>
+              </p>
+              <p class="description one">
+                Stir Advisors drives tangible outcomes through transformative
+                guidance. Our innovative strategies redefine success,
+                consistently delivering measurable results for businesses.
+              </p>
+              <p class="description">
+                At Stir Advisors, advisory means actionable pathways to success.
+                Our precision-crafted strategies ensure measurable impacts,
+                propelling businesses toward their objectives with innovation
+                and expertise.
+              </p>
+              <a href="#form"><button class="site-btn">Get in touch</button></a>
+            </div>
+            <div class="right">
+              <img src="/assets/img/hero-2.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="carousel-item">
+        <div class="left" data-aos="fade-left">
+          <p class="heading">
+            About <span class="blue-text">Stir Advisors</span>
+          </p>
+          <p class="description">
+            <span class="blue-text text"
+              >A Boutique Advisory Firm by the Founders, For the Founders</span
+            >
+          </p>
+          <p class="description one">
+            Empowering startups to be investment-ready is our forte. We
+            streamline strategies, refine approaches, and equip businesses for
+            investment success, ensuring their readiness for growth and
+            development.
+          </p>
+          <p class="description">
+            At the core of our expertise lies the art of making startups
+            investment-ready. Through meticulous guidance and strategic
+            refinement, we prepare businesses for the funding landscape,
+            enabling their potential to flourish in the competitive market.
+          </p>
+          <a href="#form"><button class="site-btn">Get in touch</button></a>
+        </div>
+        <div class="right" data-aos="fade-right">
+          <img src="/assets/img/about.png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="portfolio-wrap inner-wrap">
+        <p class="section-heading text-center" data-aos="fade-up">Portfolio</p>
+        <div class="portfolio-item-wrap" data-aos="fade-up">
+          <figure class="portfolio-item invert">
+            <img src="/assets/img/rezmytrip-logo.png" />
+            <figcaption>
+              <h3>RezMyTrip</h3>
+              <h4>Travel Technology Solutions - Tourism Management</h4>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <img src="/assets/img/bullagritech-logo.svg" />
+            <figcaption>
+              <h3>Bull Agritech</h3>
+              <h4>Agricultural Technology - Agribusiness Solutions</h4>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <img src="/assets/img/ainakwala-logo.png" />
+            <figcaption>
+              <h3>Ainak Wala</h3>
+              <h4>Eyewear & Optics - Vision Care Services</h4>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <img src="/assets/img/bookmybox-logo.png" />
+            <figcaption>
+              <h3>BookMyBox</h3>
+              <h4>Sports Technology - Recreation & Entertainment</h4>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <img src="/assets/img/jarvistechnolabs-logo.webp" />
+            <figcaption>
+              <h3>Jarvis Technolabs</h3>
+              <h4>Software Services - Digital Innovation Solutions</h4>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <p class="section-heading text-center" data-aos="fade-up">
+        Services We Offer
+      </p>
+      <div class="tiles">
+        <div class="tile-wrap inner-wrap">
+          <div class="tile-item" data-aos="fade-up">
+            <img src="/assets/img/Equity Fundraising.svg" />
+            <p class="heading">Equity Fundraising</p>
+            <p class="description">
+              Stir Advisors specializes in navigating the complexities of equity
+              fundraising, offering tailored solutions that help startups and
+              SMEs secure the necessary capital to fuel their growth. Our
+              expertise lies in creating strategies that align with your
+              business objectives, ensuring a successful fundraising journey.
+            </p>
+          </div>
+
+          <div class="tile-item" data-aos="fade-up">
+            <img src="/assets/img/Debt Capital.svg" />
+            <p class="heading">Debt Capital</p>
+            <p class="description">
+              Leveraging our extensive knowledge of debt markets, Stir Advisors
+              assists businesses in accessing debt capital efficiently. We
+              customize financial structures and provide guidance throughout the
+              process, enabling companies to optimize their capital structure
+              while minimizing risks.
+            </p>
+          </div>
+
+          <div class="tile-item" data-aos="fade-up">
+            <img src="/assets/img/Grants & Subsidies.svg" />
+            <p class="heading">Grants & Subsidies</p>
+            <p class="description">
+              At Stir Advisors, we recognize the value of grants and subsidies
+              in facilitating business growth. We offer comprehensive guidance
+              to identify and secure available grants and subsidies, maximizing
+              opportunities for funding and support.
+            </p>
+          </div>
+
+          <div class="tile-item" data-aos="fade-up">
+            <img src="/assets/img/Structuring & Business Strategy.svg" />
+            <p class="heading">Structuring & Business Strategy</p>
+            <p class="description">
+              We understand that businesses evolve, and at times, restructuring
+              becomes essential for sustainability and growth. Stir Advisors
+              offers strategic insights and support for restructuring
+              initiatives, ensuring a smooth transition and enhanced
+              organizational efficiency.
+            </p>
+          </div>
+
+          <div class="tile-item" data-aos="fade-up">
+            <img src="/assets/img/Mergers & Acquisition.svg" />
+            <p class="heading">Mergers & Acquisition</p>
+            <p class="description">
+              Our Mergers & Acquisitions (M&A) expertise drives strategic
+              partnerships and growth opportunities. We facilitate seamless
+              transitions and strategic deals, enabling businesses to navigate
+              mergers, acquisitions, or divestitures, unlocking their potential
+              for sustained success and market advancement.
+            </p>
+          </div>
+
+          <div class="tile-item" data-aos="fade-up">
+            <img src="/assets/img/SME IPO.svg" />
+            <p class="heading">SME IPO</p>
+            <p class="description">
+              SME IPOs mark a significant milestone for small and medium
+              enterprises, offering them access to public markets. Our tailored
+              guidance and expertise in the SME IPO process empower businesses
+              to navigate regulatory complexities, facilitating their entry into
+              the public sphere for enhanced visibility, capital infusion, and
+              continued growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="clients">
+        <p class="section-heading text-center" data-aos="fade-up">Our Clients</p>
+        <div class="client-wrap inner-wrap" data-aos="fade-up">
+            <div class="client-item">
+                <img src="/assets/img/rezmytrip-logo.png" />
+            </div>
+            <div class="client-item">
+                <img src="/assets/img/bullagritech-logo.svg" />
+            </div>
+            <div class="client-item">
+                <img src="/assets/img/ainakwala-logo.png" />
+            </div>
+        </div>
+    </div> -->
+
+    <div id="footer">
+      <div class="logo-wrap inner-wrap">
+        <img onclick="toTop()" class="logo" src="/assets/img/logo.png" />
+      </div>
+      <div class="inner-wrap links-wrap">
+        <div class="left">
+          <p class="heading">Quick links</p>
+          <ul>
+            <li>Services</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div class="right" id="form">
+          <p class="heading">
+            Connect with <span class="blue-text">Stir Advisors</span> today.
+          </p>
+          <form id="contact-us">
+            <input type="text" name="name" placeholder="Enter name" />
+            <input type="tel" name="mobile" placeholder="Enter phone number" />
+            <input type="email" name="email" placeholder="Enter email" />
+            <textarea
+              rows="6"
+              cols="auto"
+              name="message"
+              placeholder="Enter purpose of connection"
+            ></textarea>
+            <button type="submit" class="site-btn">Contact us</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
